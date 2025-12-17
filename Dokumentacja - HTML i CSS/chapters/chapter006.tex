@@ -1,0 +1,35 @@
+\chapter{Weryfikacja zgodności ze standardami}
+\label{cha:Weryfikacjazgodnościzestandardami}
+
+Kluczowym etapem finalizacji projektu było przeprowadzenie walidacji kodu. Celem tego procesu było potwierdzenie, że napisana struktura HTML oraz CSS są zgodne z obowiązującymi standardami W3C (World Wide Web Consortium). Poprawność kodu ma kluczowe znaczenie dla:
+
+\begin{itemize}
+    \item \textbf{Kompatybilności} – gwarantuje poprawne wyświetlanie strony na różnych przeglądarkach i systemach operacyjnych.
+    \item \textbf{Dostępności (Accessibility)} – ułatwia interpretację strony przez czytniki ekranowe dla osób niepełnosprawnych.
+    \item \textbf{SEO (Search Engine Optimization)} – semantyczny, bezbłędny kod jest lepiej indeksowany przez roboty wyszukiwarek (np. Google).\newline
+\end{itemize}
+
+\section{Walidacja HTML}
+\label{sec:WalidacjaHTML5}
+
+Do weryfikacji warstwy strukturalnej wykorzystano narzędzie \textbf{W3C Markup Validation Service}. Przeprowadzony test dla pliku \texttt{strona.html} (oraz pozostałych podstron) zakończył się wynikiem pozytywnym. Walidator nie wykrył żadnych błędów ani ostrzeżeń.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figures/test1.jpg}
+    \caption{Wynik walidacji pliku \texttt{strona.html}.}
+    \label{fig:htmlval}
+\end{figure}
+
+\newpage
+\section{Walidacja CSS}
+\label{sec:WalidacjaCSS3}
+
+Arkusze stylów zostały poddane analizie przy użyciu narzędzia \textbf{W3C CSS Validation Service}. Sprawdzono plik \texttt{style.css} pod kątem poprawności składni oraz zgodności z profilem CSS level 3 + SVG. Test zakończył się sukcesem, potwierdzając brak błędów.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figures/test2.jpg}
+    \caption{Wynik walidacji pliku \texttt{style.css}.}
+    \label{fig:cssval}
+\end{figure}

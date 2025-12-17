@@ -1,0 +1,39 @@
+\chapter{Opis założeń projektu}
+\label{cha:opisZałożeńProjektu}
+
+%---------------------------------------------------------------------------
+
+\section{Założenia projektu}
+\label{sec:Założeniaprojektu}
+
+Realizacja projektu \textbf{Kroniki Hogwartu} opierała się na szeregu założeń funkcjonalnych oraz wizualnych, mających na celu stworzenie witryny atrakcyjnej dla odbiorcy jak i poprawnej technologicznie. Założenia obejmowały:
+
+\begin{itemize}
+    \item \textbf{Profil odbiorcy i cel informacyjny} – strona skierowana jest do fanów uniwersum Harry'ego Pottera, którzy poszukują wiedzy podanej w atrakcyjnej i wizualnej formie.
+    \item \textbf{Model witryny} – ograniczenie architektury wyłącznie do warstwy prezentacyjnej (Front-end). Projekt jest stroną statyczną, niewymagającą zaplecza serwerowego (Back-end) ani baz danych, co pozwala na łatwy hosting i szybkie działanie.
+    \item \textbf{Wizualizm} – projekt zakłada, że design ma budować klimat. Strona ma pasować wizualnie do tego co się na niej znajduje, nawet jeśli oznacza to użycie bardziej złożonych efektów graficznych czy niestandardowych czcionek.
+\end{itemize}
+
+\hfill
+\section{Wymagania funkcjonalne}
+\label{sec:Wymaganiafunkcjonalne}
+Wymagania funkcjonalne określają zakres operacji, jakie użytkownik może wykonać w obrębie witryny, oraz sposób zachowania się systemu w odpowiedzi na te działania.
+
+\begin{itemize}
+    \item \textbf{Intuicyjna nawigacja (Global Navigation)} – strona zawiera stały pasek menu (\textit{Sticky Header}), umożliwiający szybkie przemieszczanie się pomiędzy głównymi sekcjami (Strona Główna, Domy, Filmy) bez konieczności przewijania na początek strony.
+    \item \textbf{Prezentacja treści multimedialnych} – witryna umożliwia przeglądanie szczegółowych informacji o serii filmowej, w tym opisów fabuły, głównych bohaterów a także charakterystyki Domów Hogwartu z wykorzystaniem dedykowanych grafik.
+    \item \textbf{Integracja z zasobami zewnętrznymi} – zaimplementowano aktywne odnośniki do mediów społecznościowych (Facebook, Instagram, X), zewnętrznych źródeł wiedzy (Wikipedia) oraz serwisów wideo.
+    \item \textbf{Mechanizm powrotu} – na każdej podstronie zaimplementowano funkcjonalność, pozwalającą użytkownikowi na natychmiastowe przewinięcie widoku do początku okna przeglądarki.
+\end{itemize}
+
+\newpage
+\section{Wymagania niefunkcjonalne}
+\label{sec:Wymaganianiefunkcjonalne}
+Wymagania niefunkcjonalne definiują atrybuty jakościowe systemu, ograniczenia technologiczne oraz standardy, jakimi kierowano się podczas procesu tworzenia.
+
+\begin{itemize}
+    \item \textbf{Responsywność (RWD)} – witryna musi poprawnie skalować się na wszystkich typach urządzeń, w szczególności dla szerokości 900px, poniżej której układ, dostosowany jest do ekranów dotykowych.
+    \item \textbf{Kompatybilność przeglądarkowa} – kod HTML i CSS został zoptymalizowany pod kątem poprawnego wyświetlania w najpopularniejszych przeglądarkach internetowych (Google Chrome, Mozilla Firefox, Microsoft Edge, Safari).
+    \item \textbf{Estetyka i spójność wizualna} – interfejs musi utrzymywać jednolity styl graficzny. Elementy strony muszą charakteryzować się odpowiednim doborem efektów, zachowując przy tym wysoki kontrast tekstu dla zapewnienia czytelności.
+    \item \textbf{Czystość technologiczna} – całość warstwy wizualnej i animacji interakcji oparta jest wyłącznie na kaskadowych arkuszach stylów (CSS3).
+\end{itemize}

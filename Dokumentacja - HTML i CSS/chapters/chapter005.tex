@@ -1,0 +1,76 @@
+\chapter{Prezentacja warstwy użytkowej projektu}
+\label{cha:prezentacja}
+
+Warstwa użytkowa stanowi wizytówkę całego projektu. Jest to płaszczyzna, na której zachodzi interakcja pomiędzy użytkownikiem a kodem aplikacji. Projekt \textbf{Kroniki Hogwartu} został zaprojektowany tak, aby od pierwszych sekund zanurzać odbiorcę w klimacie uniwersum.\newline
+
+\section{Stylistyka}
+\label{sec:Stylistyka}
+
+Warstwa wizualna oparta jest na trzech kluczowych elementach:
+
+\begin{itemize}
+    \item \textbf{Glassmorphism} – w projekcie efekt „matowego szkła” jest dominujący. Półprzezroczyste kontenery z rozmytym tłem (\textit{blur}) sprawiają, że treść jest czytelna, ale nie odcina się całkowicie od graficznego tła strony. Nadaje to stronie głębi i nowoczesności.
+    \item \textbf{Paleta Kolorystyczna} – zastosowano schemat \textit{Dark Mode} (ciemny motyw), który jest łagodny dla wzroku i idealnie komponuje się z tematyką witryny. Dominująca czerń (\texttt{\#0f0f0f}) została przełamana eleganckim złotem (\texttt{\#d4af37}), używanym do podkreślenia najważniejszych elementów, takich jak nagłówki, aktywne linki czy linie oddzielające sekcje.
+    \item \textbf{Typografia} – w celu budowania hierarchii treści wykorzystano dwa kroje pisma:
+    \begin{itemize}
+        \item \textbf{Cinzel} – ozdobny krój, używany w nagłówkach (H1, H2) oraz menu.
+        \item \textbf{Lato} – nowoczesny krój, zapewniający wysoką czytelność dłuższych bloków tekstu.\newline
+    \end{itemize}
+\end{itemize}
+
+\section{Nawigacja i interakcja}
+\label{sec:Nawigacjaiinterakcja}
+
+Projekt zakłada intuicyjność obsługi. Zaimplementowano rozwiązania ułatwiające poruszanie się po witrynie:
+
+\begin{enumerate}
+    \item \textbf{Sticky Navigation} – pasek menu jest „przyklejony” do górnej krawędzi ekranu. Dzięki temu użytkownik ma dostęp do nawigacji w każdym momencie, niezależnie od tego, jak głęboko przewinął stronę. Półprzezroczyste tło menu zapobiega zasłanianiu treści podczas przewijania.
+    \item \textbf{Mikro-interakcje (:hover)} – większość elementów reaguje na najechanie kursorem. Animacje, takie jak zmiana koloru na złoty, pojawienie się podkreślenia, czy zmiana wyglądu kursora dają użytkownikowi informację, że element jest „klikalny”.
+    \item \textbf{Dostępność na urządzeniach mobilnych} – na telefonach interfejs automatycznie dostosowuje swój układ i inne elementy, ułatwiając korzystanie ze strony.
+\end{enumerate}
+
+\newpage
+\section{Wizualizacja projektu}
+\label{sec:Wizualizacjaprojektu}
+
+Poniżej przedstawiono zrzuty ekranu prezentujące finalny wygląd zrealizowanej strony internetowej, z podziałem na kluczowe sekcje oraz widok mobilny.
+
+\subsection{Strona główna}
+
+Pierwszym elementem, z którym styka się użytkownik, jest strona główna. Kluczowym aspektem tego widoku jest czytelna hierarchia informacji oraz stale widoczny pasek nawigacyjny. Ciemne tło stanowi idealny kontrast dla złotych nagłówków, co buduje pożądany, tajemniczy klimat.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figures/Strona_glowna.jpg}
+    \caption{Fragment strony głównej z widocznym menu nawigacyjnym.}
+    \label{fig:home}
+\end{figure}
+
+\subsection{Podstrony: organizacja treści}
+
+W przypadku sekcji Domy (\figurename~\ref{fig:domy}) zastosowano układ siatki oparty na \texttt{Grid}, co pozwala na eleganckie wyeksponowanie każdego z herbów. Natomiast dla sekcji Filmy (\figurename~\ref{fig:filmy}), gdzie kluczowy jest dłuższy tekst opisu fabuły, wybrano układ wertykalny.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{figures/Domy.jpg}
+    \caption{Fragment podstrony "Domy" z widoczną stopką i przyciskiem "Powrót na początek".}
+    \label{fig:domy}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{figures/Filmy.jpg}
+    \caption{Fragment podstrony "Filmy" z widocznym opisem filmu oraz plakatem.}
+    \label{fig:filmy}
+\end{figure}
+
+\subsection{Wersja mobilna (RWD)}
+
+Ostatni zrzut ekranu potwierdza pełną responsywność projektu. Na ekranach o małej szerokości (poniżej 900px) interfejs przechodzi transformację: menu nawigacyjne zagęszcza się, a wielokolumnowe siatki są redukowane do jednej kolumny. Zapewnia to wygodną obsługę na smartfonach bez konieczności poziomego przewijania strony.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{figures/Mobilny.jpg}
+    \caption{Responsywność projektu (RWD) – fragment widoku strony na urządzeniu mobilnym z pionowym układem.}
+    \label{fig:mobile}
+\end{figure}

@@ -1,0 +1,31 @@
+\chapter{Opis struktury projektu}
+\label{cha:opisStrukturyProjektu}
+
+\section{Struktura projektu}
+\label{sec:Strukturaprojektu}
+
+Architektura projektu została zaprojektowana z wyraźnym podziałem na warstwę strukturalną (HTML) oraz prezentacyjną (CSS). Taka organizacja plików zapewnia łatwość w zarządzaniu kodem oraz jego dalszym rozwoju.\newline
+
+\section{Organizacja plików}
+\label{sec:Organizacjaplików}
+
+Projekt składa się z powiązanych ze sobą plików, które tworzą spójną całość witryny:
+
+\begin{itemize}
+    \item \texttt{strona.html} – plik startowy, pełniący rolę strony głównej. Zawiera podstawowe informacje o serii oraz opis głównych bohaterów.
+    \item \texttt{domy.html} – podstrona prezentująca cztery domy Hogwartu. Zawiera informacje na temat każdego z poszczególnych domów.
+    \item \texttt{filmy.html} – podstrona dedykowana filmom. Zawiera listę wszystkich części sagi filmowej wraz z opisami fabuły oraz z odnośnikami do poszczególnych filmów wideo. 
+    \item \texttt{style.css} – arkusz stylów, odpowiedzialny za warstwę wizualną wszystkich powyższych podstron. Dzięki podpięciu jednego pliku CSS do wszystkich dokumentów HTML, zachowano spójność graficzną w całym projekcie.
+    \item \textbf{Zasoby graficzne} – zbiór plików graficznych, obejmujący tło, herby domów, zdjęcia postaci, plakaty filmów oraz ikony interfejsu i mediów społecznościowych.\newline
+\end{itemize}
+
+\section{Architektura kodu CSS}
+\label{sec:ArchitekturakoduCSS}
+
+Plik \texttt{style.css} jest przemyślaną strukturą odpowiedzialną za wygląd strony. Jego budowę można podzielić na kluczowe elementy:
+
+\begin{enumerate}
+    \item \textbf{Zmienne globalne (:root)} – na początku pliku zdefiniowano paletę kolorystyczną (m.in. \texttt{--gold}, \texttt{--bg-glass}), co pozwala na zmianę motywu przewodniego strony w jednym miejscu.
+    \item \textbf{System Grid i Flexbox} – główny układ strony oparty jest na kontenerze \texttt{.grid}, który dzieli widok na obszar menu i treści. Wewnątrz sekcji wykorzystano \texttt{Flexbox} do pozycjonowania elementów.
+    \item \textbf{Responsywność} – końcowa sekcja pliku zawiera reguły dla ekranów o szerokości poniżej 900px. Nadpisują one domyślne style, zmieniając układ poziomy na pionowy oraz dostosowując wielkość czcionek i marginesów do urządzeń dotykowych.
+\end{enumerate}
